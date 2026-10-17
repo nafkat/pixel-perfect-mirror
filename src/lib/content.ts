@@ -51,7 +51,7 @@ export const chapters: Chapter[] = [
     kicker: { en: "Why test a bollard?", el: "Γιατί να δοκιμάσετε έναν πάσσαλο;" },
     lead: {
       en: "Every vessel that berths puts its faith in a piece of cast iron. Bigger ships, higher freeboards, steeper line angles — the demands on mooring hardware have never been greater.",
-      el: "Κάθε πλοίο που δένει σε πρόκριτο εμπιστεύεται ένα χυτό κομμάτι σιδήρου. Μεγαλύτερα πλοία, ψηλότερα εξάλω, απότομοτερες γωνίες σχοινιών — οι απαιτήσεις πάνω στον εξοπλισμό πρόσδεσης δεν ήταν ποτέ μεγαλύτερες.",
+      el: "Κάθε πλοίο που δένει σε προβλήτα εμπιστεύεται ένα χυτό κομμάτι σιδήρου. Μεγαλύτερα πλοία, ψηλότερα εξάλω, πιο απότομες γωνίες σχοινιών — οι απαιτήσεις πάνω στον εξοπλισμό πρόσδεσης δεν ήταν ποτέ μεγαλύτερες.",
     },
     points: {
       en: [
