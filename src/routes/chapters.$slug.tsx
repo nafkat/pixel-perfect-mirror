@@ -2,7 +2,7 @@ import { createFileRoute, Link, notFound } from "@tanstack/react-router";
 import { ArrowRight } from "lucide-react";
 import { chapters, ui } from "@/lib/content";
 import { useT } from "@/lib/i18n";
-import { ChapterSection } from "@/components/site/Chapter";
+import { ChapterSection, ChapterWideImage } from "@/components/site/Chapter";
 import { CtaBand } from "@/components/site/Layout";
 
 export const Route = createFileRoute("/chapters/$slug")({
@@ -35,6 +35,7 @@ function ChapterPage() {
   return (
     <>
       <ChapterSection chapter={chapter} full />
+      <ChapterWideImage slug={chapter.slug} />
       <section className="border-t">
         <Link
           to="/chapters/$slug"
