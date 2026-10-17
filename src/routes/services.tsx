@@ -4,7 +4,7 @@ import { nav } from "@/lib/content";
 import { PageHero, CtaBand } from "@/components/site/Layout";
 import { Reveal } from "@/components/site/Reveal";
 import { AngleDiagram, PlanAngleDiagram } from "@/components/site/Diagrams";
-import { StatsStrip } from "./index";
+import { StatsStrip } from "@/components/site/StatsStrip";
 import hero from "@/assets/hero.jpg";
 
 export const Route = createFileRoute("/services")({
