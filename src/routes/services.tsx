@@ -23,8 +23,8 @@ export const Route = createFileRoute("/services")({
 const c = {
   title: { en: "Certainty, measured in tonnes.", el: "Βεβαιότητα, μετρημένη σε τόνους." },
   intro: {
-    en: "BollardPull provides the highest level of validation of bollard load capacity through real-world pull testing — either to your specified load and angle, or to 10% above the manufacturer's rated capacity.",
-    el: "Η BollardPull παρέχει το υψηλότερο επίπεδο επικύρωσης της φέρουσας ικανότητας πασσάλων μέσω πραγματικών δοκιμών έλξης — είτε στο φορτίο και τη γωνία που ορίζετε, είτε 10% πάνω από την ονομαστική ικανότητα του κατασκευαστή.",
+    en: "BollardPull provides the highest level of validation of bollard load capacity through physical pull testing on your berth. Set the target yourself — a specific load at a specific angle — or simply ask us to prove 110% of the rated figure.",
+    el: "Η BollardPull παρέχει το υψηλότερο επίπεδο επαλήθευσης της ικανότητας φορτίου των πασσάλων μέσω φυσικής δοκιμής έλξης στην προβλήτα σας. Ορίστε εσείς τον στόχο — συγκεκριμένο φορτίο σε συγκεκριμένη γωνία — ή απλώς ζητήστε μας να αποδείξουμε το 110% της ονομαστικής τιμής.",
   },
   castTitle: { en: "The problem with castings", el: "Το πρόβλημα με τα χυτά" },
   castBody: {
