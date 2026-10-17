@@ -30,8 +30,8 @@ function ChapterPage() {
   const { slug } = Route.useLoaderData();
   const t = useT();
   const idx = chapters.findIndex((c) => c.slug === slug);
-  const chapter = chapters[idx];
-  const next = chapters[(idx + 1) % chapters.length];
+  const chapter = chapters[idx]!;
+  const next = chapters[(idx + 1) % chapters.length]!;
   return (
     <>
       <ChapterSection chapter={chapter} full />
