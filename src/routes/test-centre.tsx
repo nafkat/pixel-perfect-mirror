@@ -4,7 +4,8 @@ import { chapters, nav } from "@/lib/content";
 import { PageHero, CtaBand } from "@/components/site/Layout";
 import { Reveal } from "@/components/site/Reveal";
 import { ChapterSection } from "@/components/site/Chapter";
-import testcentre from "@/assets/testcentre.jpg";
+import { pageHeroes, testCentreGallery } from "@/lib/media";
+import { Gallery } from "@/components/site/Media";
 
 export const Route = createFileRoute("/test-centre")({
   head: () => ({
@@ -31,8 +32,15 @@ function TestCentre() {
   const inHouse = chapters.find((ch) => ch.slug === "in-house")!;
   return (
     <>
-      <PageHero eyebrow={t(nav.testCentre)} title={t(c.title)} sub={t(c.body)} image={testcentre} />
+      <PageHero eyebrow={t(nav.testCentre)} title={t(c.title)} sub={t(c.body)} image={pageHeroes.testCentre} />
       <ChapterSection chapter={inHouse} full />
+      <section className="mx-auto max-w-7xl px-6 py-32">
+        <Reveal>
+          <p className="eyebrow mb-6">{t({ en: "Gallery", el: "Γκαλερί" })}</p>
+          <h2 className="font-display mb-16 text-5xl font-extrabold md:text-7xl">{t({ en: "The Test Centre", el: "Το Κέντρο Δοκιμών" })}</h2>
+        </Reveal>
+        <Gallery images={testCentreGallery} />
+      </section>
       <Reveal>
         <CtaBand />
       </Reveal>

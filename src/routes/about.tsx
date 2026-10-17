@@ -5,7 +5,8 @@ import { PageHero, CtaBand } from "@/components/site/Layout";
 import { Reveal } from "@/components/site/Reveal";
 import { ChapterSection } from "@/components/site/Chapter";
 import { RigDiagram } from "@/components/site/Diagrams";
-import bollard from "@/assets/bollard.jpg";
+import { pageHeroes, aboutImage } from "@/lib/media";
+import { GradedImage } from "@/components/site/Media";
 
 export const Route = createFileRoute("/about")({
   head: () => ({
@@ -50,7 +51,7 @@ function About() {
   const t = useT();
   return (
     <>
-      <PageHero eyebrow={t(nav.about)} title={t(c.title)} image={bollard} />
+      <PageHero eyebrow={t(nav.about)} title={t(c.title)} image={pageHeroes.about} />
       <section className="mx-auto max-w-4xl space-y-8 px-6 py-32">
         {t(c.body).map((p, i) => (
           <Reveal key={i} delay={i * 120}>
@@ -68,7 +69,8 @@ function About() {
               ))}
             </div>
           </Reveal>
-          <Reveal delay={200} className="flex items-center">
+          <Reveal delay={200} className="flex flex-col gap-10">
+            <GradedImage image={aboutImage} className="aspect-[6/7] border" />
             <RigDiagram className="w-full" />
           </Reveal>
         </div>

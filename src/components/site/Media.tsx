@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Play, X } from "lucide-react";
+import { Play } from "lucide-react";
 import { useT } from "@/lib/i18n";
 import type { MediaImage } from "@/lib/media";
 import { showreel } from "@/lib/media";
@@ -86,4 +86,4 @@ export function Gallery({ images }: { images: MediaImage[] }) {
   );
 }
 
-export { X };
+

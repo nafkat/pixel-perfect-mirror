@@ -4,16 +4,10 @@ import { useT } from "@/lib/i18n";
 import { ui, type Chapter } from "@/lib/content";
 import { Reveal, useParallax } from "./Reveal";
 import { AngleDiagram, RigDiagram, PlanAngleDiagram } from "./Diagrams";
-import hero from "@/assets/hero.jpg";
-import bollard from "@/assets/bollard.jpg";
-import testcentre from "@/assets/testcentre.jpg";
+import { chapterBackgrounds, chapterImages } from "@/lib/media";
+import { GradedImage } from "./Media";
 
-export const chapterImage: Record<Chapter["slug"], string> = {
-  why: bollard,
-  how: hero,
-  safety: hero,
-  "in-house": testcentre,
-};
+export const chapterImage = chapterBackgrounds;
 
 function Diagram({ slug }: { slug: Chapter["slug"] }) {
   const cls = "w-full max-w-md";
@@ -57,6 +51,9 @@ export function ChapterSection({ chapter, full = false }: { chapter: Chapter; fu
                   </li>
                 ))}
               </ol>
+              {chapterImages[chapter.slug].layout === "inline" && (
+                <GradedImage image={chapterImages[chapter.slug]} className="mt-12 aspect-[16/10] max-w-xl border" />
+              )}
             </Reveal>
           ) : (
             <Reveal delay={350}>
@@ -83,4 +80,11 @@ export function ChapterSection({ chapter, full = false }: { chapter: Chapter; fu
       </div>
     </section>
   );
+}
+
+/** Full-width cinematic image for chapters with layout "full" */
+export function ChapterWideImage({ slug }: { slug: Chapter["slug"] }) {
+  const img = chapterImages[slug];
+  if (img.layout !== "full") return null;
+  return <GradedImage image={img} className="aspect-[21/9] w-full border-t" />;
 }

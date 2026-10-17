@@ -5,7 +5,8 @@ import { PageHero, CtaBand } from "@/components/site/Layout";
 import { Reveal } from "@/components/site/Reveal";
 import { AngleDiagram, PlanAngleDiagram } from "@/components/site/Diagrams";
 import { StatsStrip } from "@/components/site/StatsStrip";
-import hero from "@/assets/hero.jpg";
+import { pageHeroes, capabilityImages } from "@/lib/media";
+import { GradedImage } from "@/components/site/Media";
 
 export const Route = createFileRoute("/services")({
   head: () => ({
@@ -63,7 +64,7 @@ function Services() {
   const t = useT();
   return (
     <>
-      <PageHero eyebrow={t(nav.services)} title={t(c.title)} sub={t(c.intro)} image={hero} />
+      <PageHero eyebrow={t(nav.services)} title={t(c.title)} sub={t(c.intro)} image={pageHeroes.services} />
 
       <section className="mx-auto grid max-w-7xl gap-16 px-6 py-32 lg:grid-cols-2">
         <Reveal>
@@ -115,6 +116,13 @@ function Services() {
             <p className="eyebrow mb-6">{t(c.plan)}</p>
             <PlanAngleDiagram className="w-full" />
           </Reveal>
+        </div>
+        <div className="mt-12 grid gap-4 sm:grid-cols-3">
+          {capabilityImages.map((img, i) => (
+            <Reveal key={i} delay={i * 120}>
+              <GradedImage image={img} className="aspect-square border" />
+            </Reveal>
+          ))}
         </div>
       </section>
 

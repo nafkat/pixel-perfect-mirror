@@ -7,7 +7,8 @@ import { Reveal } from "@/components/site/Reveal";
 import { ChapterSection } from "@/components/site/Chapter";
 import { CtaBand } from "@/components/site/Layout";
 import { StatsStrip } from "@/components/site/StatsStrip";
-import heroImg from "@/assets/hero.jpg";
+import { heroPoster, heroVideo } from "@/lib/media";
+import { Showreel } from "@/components/site/Media";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -26,7 +27,11 @@ function Home() {
   return (
     <>
       <section className="relative flex min-h-screen items-center overflow-hidden">
-        <img src={heroImg} alt="" width={1920} height={1088} className="animate-slow-zoom absolute inset-0 size-full object-cover" />
+        {heroVideo ? (
+          <video src={heroVideo} poster={heroPoster} autoPlay muted loop playsInline className="absolute inset-0 size-full object-cover" />
+        ) : (
+          <img src={heroPoster} alt="" width={1920} height={1088} className="animate-slow-zoom absolute inset-0 size-full object-cover" />
+        )}
         <div className="bg-overlay-hero absolute inset-0" />
         <div className="relative mx-auto w-full max-w-7xl px-6 pt-24">
           <Reveal>
@@ -87,6 +92,7 @@ function Home() {
         <ChapterSection key={c.slug} chapter={c} />
       ))}
 
+      <Showreel />
       <CtaBand />
     </>
   );
