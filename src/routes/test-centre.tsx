@@ -22,8 +22,8 @@ export const Route = createFileRoute("/test-centre")({
 const c = {
   title: { en: "See it hold.", el: "Δείτε το να αντέχει." },
   body: {
-    en: "Clients and their representatives are welcome to witness testing first-hand at our Test Centre. New or removed bollards are bolted to an adaptable test bed and pulled at combined vertical and horizontal angles to their rated working capacity — or 10% beyond.",
-    el: "Πελάτες και εκπρόσωποί τους είναι ευπρόσδεκτοι να παρακολουθήσουν από κοντά τις δοκιμές στο Test Centre μας. Νέοι ή αφαιρεμένοι πάσσαλοι βιδώνονται σε προσαρμόσιμη κλίνη δοκιμών και έλκονται σε συνδυασμένες κατακόρυφες και οριζόντιες γωνίες έως την ονομαστική ικανότητα λειτουργίας — ή 10% παραπάνω.",
+    en: "See the proof with your own eyes. Bring your surveyor or your insurer to our Test Centre, where new or removed bollards are anchored to an adaptable test bed and taken to rated working load — or beyond.",
+    el: "Δείτε την απόδειξη με τα μάτια σας. Φέρτε τον επιθεωρητή ή τον ασφαλιστή σας στο Test Centre μας, όπου νέοι ή αφαιρεμένοι πάσσαλοι αγκυρώνονται σε προσαρμόσιμη κλίνη δοκιμών και φτάνουν στο ονομαστικό φορτίο λειτουργίας — ή πιο πέρα.",
   },
 };
 

@@ -50,8 +50,8 @@ export const chapters: Chapter[] = [
     title: { en: "Why", el: "Γιατί" },
     kicker: { en: "Why test a bollard?", el: "Γιατί να δοκιμάσετε έναν πάσσαλο;" },
     lead: {
-      en: "Mooring bollards are a safety-critical component of any port structure. As ships grow larger and freeboards increase, service duty becomes ever more demanding.",
-      el: "Οι πάσσαλοι πρόσδεσης είναι κρίσιμο για την ασφάλεια στοιχείο κάθε λιμενικής υποδομής. Καθώς τα πλοία μεγαλώνουν και τα ύψη εξάλων αυξάνονται, οι απαιτήσεις λειτουργίας γίνονται ολοένα πιο αυστηρές.",
+      en: "Every vessel that berths puts its faith in a piece of cast iron. Bigger ships, higher freeboards, steeper line angles — the demands on mooring hardware have never been greater.",
+      el: "Κάθε πλοίο που δένει σε πρόκριτο εμπιστεύεται ένα χυτό κομμάτι σιδήρου. Μεγαλύτερα πλοία, ψηλότερα εξάλω, απότομοτερες γωνίες σχοινιών — οι απαιτήσεις πάνω στον εξοπλισμό πρόσδεσης δεν ήταν ποτέ μεγαλύτερες.",
     },
     points: {
       en: [
@@ -131,8 +131,8 @@ export const chapters: Chapter[] = [
     title: { en: "In-House", el: "Στο Κέντρο" },
     kicker: { en: "Witness it first-hand.", el: "Παρακολουθήστε το από κοντά." },
     lead: {
-      en: "Clients and their representatives are welcome to witness testing at our Test Centre. New or removed bollards are bolted to an adaptable test bed and pulled to their rated working capacity — or 10% beyond.",
-      el: "Πελάτες και εκπρόσωποί τους είναι ευπρόσδεκτοι να παρακολουθήσουν δοκιμές στο Test Centre μας. Νέοι ή αφαιρεμένοι πάσσαλοι βιδώνονται σε προσαρμόσιμη κλίνη δοκιμών και έλκονται έως την ονομαστική ικανότητα λειτουργίας — ή 10% παραπάνω.",
+      en: "See the proof with your own eyes. Bring your surveyor or your insurer to our Test Centre, where new or removed bollards are anchored to an adaptable test bed and taken to rated working load — or beyond.",
+      el: "Δείτε την απόδειξη με τα μάτια σας. Φέρτε τον επιθεωρητή ή τον ασφαλιστή σας στο Test Centre μας, όπου νέοι ή αφαιρεμένοι πάσσαλοι αγκυρώνονται σε προσαρμόσιμη κλίνη δοκιμών και φτάνουν στο ονομαστικό φορτίο λειτουργίας — ή πιο πέρα.",
     },
     points: {
       en: [
